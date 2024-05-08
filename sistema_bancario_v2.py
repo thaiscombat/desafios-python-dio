@@ -77,9 +77,9 @@ def cria_conta(agencia, numero_conta, clientes):
 def lista_contas(contas):
     for conta in contas:
         contas_cadastradas = f"""\
-            Agência:\n{conta['agencia']}
-            C/C:\n{conta['numero_conta']}
-            Titular:\n{conta['usuario']['nome']}
+            Agência: {conta['agencia']}\n
+            Contas Cadastradas: {conta['numero_conta']}\n
+            Titular: {conta['usuario']['nome']}\n
         """
         print("-" * 40)
         print(contas_cadastradas)
